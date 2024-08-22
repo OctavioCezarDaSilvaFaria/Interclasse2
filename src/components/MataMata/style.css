@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Customfont';
+  src: local("Sunday Sport"),
+       url("../../fonts/Sunday Sport.otf") format("opentype"),
+       url("../../fonts/Sunday Sport.ttf") format("truetype");
+}
+
+#titulo {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Customfont', 'Khand', sans-serif; 
+  font-size: 27px;
+  width: 100%;
+}
+
+#titulo h1 {
+  font-size: 70px;
+}
+
+#Tournament {
+  height:850px;
+  width: 100%;
+  background-image: url('../../assets/FUNDO%20VERMELHO%201.png'); 
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.wrapper {
+  display: flex;
+  height: 600px;
+  justify-content: center;
+}
+
+#teamcontainer {
+  background: rgb(217, 217, 217);
+  background: linear-gradient(520deg, rgb(255, 255, 255) 0%, rgba(157, 155, 155, 1) 100%);
+  width: 300px;
+  height: 75px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.item p {
+  padding: 20px;
+  margin: 0;
+}
+
+.item-parent {
+  position: relative;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#champ {
+  display: flex;
+  flex-direction: row; 
+  gap: 30px;
+}
+
+#champ h1 {
+  color: white;
+  font-family: 'Khand', sans-serif;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.item-parent::after {
+  position: absolute;
+  content: '';
+  width: 25px; 
+  height: 2px;
+  left: 0;
+  top: 50%;
+  background-color: #ffffff;
+  transform: translateX(-100%);
+}
+
+.item-childrens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-child {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.item-child::before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  top: 50%;
+  transform: translateX(100%);
+  width: 25px;
+  height: 2px;
+}
+
+.item-child::after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  right: -25px;
+  height: calc(50% + 22px);
+  width: 2px;
+  top: 50%;
+}
+
+.item-child:last-child::after {
+  transform: translateY(-100%);
+}
+
+.item-child:only-child::after {
+  display: none;
+}
+
+#band {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 50px;
+  border: 2px solid black;
+  background-color: gray;
+}
+
+#nome {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family: 'Khand', sans-serif;
+  font-size: 10px;
+  gap: 10px;
+  width: 80%;
+}
