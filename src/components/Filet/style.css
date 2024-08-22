@@ -4,8 +4,38 @@
     height: 50px;
     margin-top: 0.1px;
     text-align: center;
-    justify-content: space-evenly;
     flex-direction: row;
+    justify-content: center;
     display: flex;
     align-items: center;
   }
+.filet-div-maior {
+  display: flex;
+}
+.filet-div {
+  display: flex;
+}
+.link1 {
+  margin: 0 80px;
+}
+
+@media (max-width: 2000px){
+  .link1 {
+    margin: 0 50px;
+  }
+}
+@media (max-width: 1500px){
+  .link1 {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 1050px){
+  #filet {
+    height: 80px;
+  }
+  .filet-div-maior {
+    align-items: center;
+    margin-top: 5px;
+    flex-direction: column;
+  }
+}

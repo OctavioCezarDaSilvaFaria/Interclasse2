@@ -111,7 +111,7 @@
 }
 
 #container {
-  background-color: #DA251C;
+  background-color: black;
   height: 400px;
   width: 100%;
   display: flex;
@@ -172,7 +172,7 @@
 .todos2 {
   width: 100%;
   margin-bottom: -161px;
-  background-color: #DA251C;
+  background-color: black;
 }
 
 #m-m {

@@ -111,7 +111,7 @@
 }
 
 #container {
-  background-color: #DA251C;
+  background-color: black;
   height: 400px;
   width: 100%;
   display: flex;
@@ -172,7 +172,7 @@
 .todos2 {
   width: 100%;
   margin-bottom: -161px;
-  background-color: #DA251C;
+  background-color: black;
 }
 
 #m-m {
@@ -186,4 +186,10 @@
 #h2 {
   font-size: 100px;
   font-family: "Khand", sans-serif;
+}
+
+@media (max-width: 1100px){
+  grupo1 {
+    width: 50%;
+  }
 }
